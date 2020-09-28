@@ -24,11 +24,10 @@ void main() {
     when(repository.createClient(any)).thenAnswer((_) async => Right(tClient));
 
     //Act
-    final result = usecase(Params(client: tNewClient));
+    final result = await usecase(Params(client: tNewClient));
 
     //Assert
     expect(result, Right(tClient));
-    verify(repository.createClient(tClient));
-    verifyNoMoreInteractions(repository);
+    verify(repository.createClient(tNewClient)).called(1);
   });
 }
