@@ -1,8 +1,10 @@
 import 'package:equatable/equatable.dart';
 import "package:meta/meta.dart";
 
+import 'ID.dart';
+
 class PurcharseOrder extends Equatable {
-  final String id;
+  final ID id;
   final String invoice;
   final String order;
 

@@ -2,8 +2,10 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:myapp/app/domain/entities/purcharse_order.dart';
 
+import 'ID.dart';
+
 class Client extends Equatable {
-  final String id;
+  final ID id;
   final String name;
   final List<PurcharseOrder> purcharseOrders;
 

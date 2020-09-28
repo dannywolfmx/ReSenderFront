@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
+import 'package:myapp/app/domain/entities/ID.dart';
 import 'package:myapp/app/domain/entities/purcharse_order.dart';
 import 'package:myapp/app/domain/repository/order_repository.dart';
 import 'package:myapp/app/domain/usecase/get_purcharse_orders.dart';
@@ -18,9 +19,9 @@ void main() {
   });
 
   final tPurcharseOrders = <PurcharseOrder>[
-    PurcharseOrder(id: "1", invoice: "1234", order: "1234"),
-    PurcharseOrder(id: "2", invoice: "1234", order: "1234"),
-    PurcharseOrder(id: "3", invoice: "1234", order: "1234"),
+    PurcharseOrder(id: ID("1"), invoice: "1234", order: "1234"),
+    PurcharseOrder(id: ID("2"), invoice: "1234", order: "1234"),
+    PurcharseOrder(id: ID("3"), invoice: "1234", order: "1234"),
   ];
 
   test(
