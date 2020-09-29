@@ -7,4 +7,5 @@ abstract class SessionInfoRepository {
   //Just we can have a unique session
   Future<Either<Failure, SessionInfo>> saveSessionInfo(SessionInfo loggin);
   Future<Either<Failure, SessionInfo>> getSessionInfo();
+  Future<Either<Failure, bool>> deleteSessionInfo();
 }
