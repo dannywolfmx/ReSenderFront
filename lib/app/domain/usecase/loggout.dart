@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:myapp/app/domain/repository/session_info_repository.dart';
 import 'package:myapp/core/errors/failure.dart';
 import 'package:dartz/dartz.dart';
