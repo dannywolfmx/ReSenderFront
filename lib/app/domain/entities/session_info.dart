@@ -2,12 +2,12 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:myapp/app/domain/entities/user.dart';
 
-class LogginInfo extends Equatable {
+class SessionInfo extends Equatable {
   final User user;
   final Token token;
   final bool isLoggedIn;
 
-  LogginInfo({
+  SessionInfo({
     this.user,
     this.token,
     this.isLoggedIn = false,
