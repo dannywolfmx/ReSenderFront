@@ -4,7 +4,7 @@ import 'package:meta/meta.dart';
 import 'package:myapp/app/domain/entities/purcharse_order.dart';
 import 'package:myapp/app/domain/repository/order_repository.dart';
 import 'package:myapp/core/errors/failure.dart';
-import 'package:myapp/core/errors/usecases/usecase.dart';
+import 'package:myapp/core/usecases/usecase.dart';
 
 class CreatePurcharseOrder implements UseCase<PurcharseOrder, Params> {
   final PurcharseOrderRepository repository;

@@ -4,7 +4,7 @@ import 'package:meta/meta.dart';
 import 'package:myapp/app/domain/entities/client.dart';
 import 'package:myapp/app/domain/repository/client_repository.dart';
 import 'package:myapp/core/errors/failure.dart';
-import 'package:myapp/core/errors/usecases/usecase.dart';
+import 'package:myapp/core/usecases/usecase.dart';
 
 class CreateClient implements UseCase<Client, Params> {
   ClientRepository repository;

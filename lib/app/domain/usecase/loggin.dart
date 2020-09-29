@@ -6,7 +6,7 @@ import 'package:myapp/app/domain/application_service/loggin_service.dart';
 import 'package:myapp/app/domain/entities/session_info.dart';
 import 'package:myapp/app/domain/repository/session_info_repository.dart';
 import 'package:myapp/core/errors/failure.dart';
-import 'package:myapp/core/errors/usecases/usecase.dart';
+import 'package:myapp/core/usecases/usecase.dart';
 
 class Loggin implements UseCase<SessionInfo, Params> {
   final LogginService service;

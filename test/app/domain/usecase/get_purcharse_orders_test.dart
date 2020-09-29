@@ -5,7 +5,7 @@ import 'package:myapp/app/domain/entities/id.dart';
 import 'package:myapp/app/domain/entities/purcharse_order.dart';
 import 'package:myapp/app/domain/repository/order_repository.dart';
 import 'package:myapp/app/domain/usecase/get_purcharse_orders.dart';
-import 'package:myapp/core/errors/usecases/usecase.dart';
+import 'package:myapp/core/usecases/usecase.dart';
 
 class MockOrderRepository extends Mock implements PurcharseOrderRepository {}
 
