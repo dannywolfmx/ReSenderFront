@@ -1,10 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:myapp/app/domain/entities/id.dart';
 import 'package:myapp/app/domain/entities/client.dart';
 import 'package:myapp/app/domain/repository/client_repository.dart';
 import 'package:myapp/app/domain/usecase/create_client.dart';
+
+import '../../../../lib/app/domain/entities/ID.dart';
 
 class MockClientRepository extends Mock implements ClientRepository {}
 
