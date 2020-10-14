@@ -5,4 +5,6 @@ import 'package:myapp/core/errors/failure.dart';
 abstract class UserRepository {
   Future<Either<Failure, User>> getData();
   Future<Either<Failure, User>> createUser(String username, String password);
+  Future<Either<Failure, User>> updatePassword(
+      String username, String oldPassword, String newPassword);
 }
